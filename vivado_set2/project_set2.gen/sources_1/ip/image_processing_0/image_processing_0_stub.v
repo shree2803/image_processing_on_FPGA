@@ -1,0 +1,51 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+// Date        : Fri Nov  8 19:04:56 2024
+// Host        : LAPTOP-L9T64LL4 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub {c:/Users/P V S
+//               Sukeerthi/Desktop/project_set2/project_set2.gen/sources_1/ip/image_processing_0/image_processing_0_stub.v}
+// Design      : image_processing_0
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7a35tcpg236-1
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* X_CORE_INFO = "image_processing,Vivado 2022.2" *)
+module image_processing_0(frame_in_pixel_ce0, frame_in_pixel_ce1, 
+  frame_out1_pixel_ce0, frame_out1_pixel_we0, frame_out2_pixel_ce0, frame_out2_pixel_we0, 
+  ap_clk, ap_rst, ap_start, ap_done, ap_idle, ap_ready, frame_in_pixel_address0, 
+  frame_in_pixel_q0, frame_in_pixel_address1, frame_in_pixel_q1, frame_in_width, 
+  frame_in_height, frame_out1_pixel_address0, frame_out1_pixel_d0, frame_out1_width, 
+  frame_out1_height, frame_out2_pixel_address0, frame_out2_pixel_d0, frame_out2_width, 
+  frame_out2_height)
+/* synthesis syn_black_box black_box_pad_pin="frame_in_pixel_ce0,frame_in_pixel_ce1,frame_out1_pixel_ce0,frame_out1_pixel_we0,frame_out2_pixel_ce0,frame_out2_pixel_we0,ap_clk,ap_rst,ap_start,ap_done,ap_idle,ap_ready,frame_in_pixel_address0[13:0],frame_in_pixel_q0[95:0],frame_in_pixel_address1[13:0],frame_in_pixel_q1[95:0],frame_in_width[31:0],frame_in_height[31:0],frame_out1_pixel_address0[13:0],frame_out1_pixel_d0[95:0],frame_out1_width[31:0],frame_out1_height[31:0],frame_out2_pixel_address0[13:0],frame_out2_pixel_d0[95:0],frame_out2_width[31:0],frame_out2_height[31:0]" */;
+  output frame_in_pixel_ce0;
+  output frame_in_pixel_ce1;
+  output frame_out1_pixel_ce0;
+  output frame_out1_pixel_we0;
+  output frame_out2_pixel_ce0;
+  output frame_out2_pixel_we0;
+  input ap_clk;
+  input ap_rst;
+  input ap_start;
+  output ap_done;
+  output ap_idle;
+  output ap_ready;
+  output [13:0]frame_in_pixel_address0;
+  input [95:0]frame_in_pixel_q0;
+  output [13:0]frame_in_pixel_address1;
+  input [95:0]frame_in_pixel_q1;
+  input [31:0]frame_in_width;
+  input [31:0]frame_in_height;
+  output [13:0]frame_out1_pixel_address0;
+  output [95:0]frame_out1_pixel_d0;
+  input [31:0]frame_out1_width;
+  input [31:0]frame_out1_height;
+  output [13:0]frame_out2_pixel_address0;
+  output [95:0]frame_out2_pixel_d0;
+  input [31:0]frame_out2_width;
+  input [31:0]frame_out2_height;
+endmodule

@@ -1,0 +1,459 @@
+
+*** Running vivado
+    with args -log image_processing_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source image_processing_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source image_processing_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/User/Vivado/Vitis_HLS/2022.2/bin/final/solution3/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/User/Vivado/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: image_processing_0
+Command: synth_design -top image_processing_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23404
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/User/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1211.938 ; gain = 406.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'image_processing_0' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/synth/image_processing_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'image_processing' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing.v:10]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_fmul_32ns_32ns_32_4_max_dsp_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/User/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/User/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:78971]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_uitofp_32s_32_6_no_dsp_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_uitofp_32s_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_uitofp_32s_32_6_no_dsp_1_ip' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_uitofp_32s_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_uitofp_32s_32_6_no_dsp_1_ip' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_uitofp_32s_32_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_uitofp_32s_32_6_no_dsp_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_uitofp_32s_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_dadd_64ns_64ns_64_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_dadd_64ns_64ns_64_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_dmul_64ns_64ns_64_7_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_dmul_64ns_64ns_64_7_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_uitodp_32ns_64_6_no_dsp_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_uitodp_32ns_64_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_uitodp_32ns_64_6_no_dsp_1_ip' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_uitodp_32ns_64_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_uitodp_32ns_64_6_no_dsp_1_ip' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/ip/image_processing_uitodp_32ns_64_6_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_uitodp_32ns_64_6_no_dsp_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_uitodp_32ns_64_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_mul_32s_8ns_32_2_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32s_8ns_32_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_mul_32s_8ns_32_2_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32s_8ns_32_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_mul_32s_9ns_32_2_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32s_9ns_32_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_mul_32s_9ns_32_2_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32s_9ns_32_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_mul_32s_6ns_32_2_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32s_6ns_32_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_mul_32s_6ns_32_2_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32s_6ns_32_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_mul_32ns_34ns_65_2_1' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32ns_34ns_65_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_mul_32ns_34ns_65_2_1' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_mul_32ns_34ns_65_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'image_processing_flow_control_loop_pipe_sequential_init' [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/hdl/verilog/image_processing.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'image_processing_0' (0#1) [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/synth/image_processing_0.v:53]
+WARNING: [Synth 8-7129] Port reset in module image_processing_mul_32ns_34ns_65_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module image_processing_mul_32s_6ns_32_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module image_processing_mul_32s_9ns_32_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module image_processing_mul_32s_8ns_32_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized113 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized113 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized113 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized113 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized113 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module fix_to_flt_conv_exp__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized126 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized126 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized126 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[26] in module carry_chain__parameterized16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized69 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 1499.637 ; gain = 694.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1499.637 ; gain = 694.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1499.637 ; gain = 694.391
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1499.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1828 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/constraints/image_processing_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.gen/sources_1/ip/image_processing_0/constraints/image_processing_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.runs/image_processing_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.runs/image_processing_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1572.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 57 instances were transformed.
+  FDE => FDRE: 57 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.586 . Memory (MB): peak = 1574.812 ; gain = 1.973
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/User/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:01:05 . Memory (MB): peak = 1574.812 ; gain = 769.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:01:05 . Memory (MB): peak = 1574.812 ; gain = 769.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  {C:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.runs/image_processing_0_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:05 . Memory (MB): peak = 1574.812 ; gain = 769.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:10 . Memory (MB): peak = 1574.812 ; gain = 769.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/fmul_32ns_32ns_32_4_max_dsp_1_U1/image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/fmul_32ns_32ns_32_4_max_dsp_1_U1/image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/fmul_32ns_32ns_32_4_max_dsp_1_U1/image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/fmul_32ns_32ns_32_4_max_dsp_1_U1/image_processing_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'inst/grp_image_processing_Pipeline_VITIS_LOOP_165_1_VITIS_LOOP_166_2_fu_86/uitofp_32s_32_6_no_dsp_1_U2/image_processing_uitofp_32s_32_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1:/image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1:/image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1:/image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'image_processing_dadd_64ns_64ns_64_8_full_dsp_1:/image_processing_dadd_64ns_64ns_64_8_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1:/image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1:/image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1:/image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'image_processing_dmul_64ns_64ns_64_7_max_dsp_1:/image_processing_dmul_64ns_64ns_64_7_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'image_processing_uitodp_32ns_64_6_no_dsp_1:/image_processing_uitodp_32ns_64_6_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:02:08 . Memory (MB): peak = 1574.812 ; gain = 769.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:02:23 . Memory (MB): peak = 1574.812 ; gain = 769.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:02:32 . Memory (MB): peak = 1574.812 ; gain = 769.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:02:47 . Memory (MB): peak = 1610.066 ; gain = 804.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:02:56 . Memory (MB): peak = 1622.738 ; gain = 817.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:02:57 . Memory (MB): peak = 1622.738 ; gain = 817.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:03:01 . Memory (MB): peak = 1622.738 ; gain = 817.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:03:01 . Memory (MB): peak = 1622.738 ; gain = 817.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:03:02 . Memory (MB): peak = 1622.738 ; gain = 817.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:03:02 . Memory (MB): peak = 1622.738 ; gain = 817.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                          | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper__parameterized3_694  | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_695  | A':B'             | 29     | 18     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_598  | C+A:B             | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized3_564  | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_565  | A':B'             | 29     | 18     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_468  | C+A:B             | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized3      | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2      | A':B'             | 29     | 18     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_380  | C+A:B             | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5_342  | A*B               | 17     | 15     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6_343  | (PCIN>>17+A*B)'   | 17     | 0      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized7_344  | PCIN+(A*B)'       | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized8_345  | PCIN>>17+A'*B'    | 17     | 0      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized9_346  | (PCIN+A'*B')'     | 19     | 15     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized10_347 | PCIN+(A'*B')'     | 19     | 17     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized11_348 | PCIN>>17+A'*B''   | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized12_349 | (PCIN+A''*B'')'   | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized13_350 | PCIN>>17+(A*B'')' | 0      | 17     | -      | -      | 38     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized14_351 | PCIN>>17+A'*B''   | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_327  | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5_285  | A*B               | 17     | 15     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6_286  | (PCIN>>17+A*B)'   | 17     | 0      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized7_287  | PCIN+(A*B)'       | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized8_288  | PCIN>>17+A'*B'    | 17     | 0      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized9_289  | (PCIN+A'*B')'     | 19     | 15     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized10_290 | PCIN+(A'*B')'     | 19     | 17     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized11_291 | PCIN>>17+A'*B''   | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized12_292 | (PCIN+A''*B'')'   | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized13_293 | PCIN>>17+(A*B'')' | 0      | 17     | -      | -      | 38     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized14_294 | PCIN>>17+A'*B''   | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_270  | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5_228  | A*B               | 17     | 15     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6_229  | (PCIN>>17+A*B)'   | 17     | 0      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized7_230  | PCIN+(A*B)'       | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized8_231  | PCIN>>17+A'*B'    | 17     | 0      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized9_232  | (PCIN+A'*B')'     | 19     | 15     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized10_233 | PCIN+(A'*B')'     | 19     | 17     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized11_234 | PCIN>>17+A'*B''   | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized12_235 | (PCIN+A''*B'')'   | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized13_236 | PCIN>>17+(A*B'')' | 0      | 17     | -      | -      | 38     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized14_237 | PCIN>>17+A'*B''   | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_213  | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5      | A*B               | 17     | 15     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6      | (PCIN>>17+A*B)'   | 17     | 0      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized7      | PCIN+(A*B)'       | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized8      | PCIN>>17+A'*B'    | 17     | 0      | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized9      | (PCIN+A'*B')'     | 19     | 15     | -      | -      | 16     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized10     | PCIN+(A'*B')'     | 19     | 17     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized11     | PCIN>>17+A'*B''   | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized12     | (PCIN+A''*B'')'   | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized13     | PCIN>>17+(A*B'')' | 0      | 17     | -      | -      | 38     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized14     | PCIN>>17+A'*B''   | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4      | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                      | (A*B)'            | 24     | 0      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0      | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1      | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|image_processing                     | A*B'              | 17     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|image_processing                     | (PCIN>>17+A*B)'   | 16     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|image_processing                     | A'*B              | 17     | 17     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|image_processing                     | (PCIN>>17+A*B)'   | 0      | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++-------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   381|
+|2     |DSP48E1 |    60|
+|20    |LUT1    |   272|
+|21    |LUT2    |  1158|
+|22    |LUT3    |   977|
+|23    |LUT4    |  1063|
+|24    |LUT5    |  1728|
+|25    |LUT6    |  3557|
+|26    |MUXCY   |   956|
+|27    |MUXF7   |     6|
+|28    |MUXF8   |     3|
+|29    |SRL16E  |   123|
+|30    |XORCY   |   556|
+|31    |FDE     |    57|
+|32    |FDRE    | 10591|
+|33    |FDSE    |     2|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:03:03 . Memory (MB): peak = 1622.738 ; gain = 817.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 493 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:02:43 . Memory (MB): peak = 1622.738 ; gain = 742.316
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:03:03 . Memory (MB): peak = 1622.738 ; gain = 817.492
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.893 . Memory (MB): peak = 1622.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2019 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1652.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 322 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 265 instances
+  FDE => FDRE: 57 instances
+
+Synth Design complete, checksum: 5c8d6f83
+INFO: [Common 17-83] Releasing license: Synthesis
+85 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Common 17-1381] The checkpoint 'C:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.runs/image_processing_0_synth_1/image_processing_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP image_processing_0, cache-ID = c84fcf275fb93a3a
+INFO: [Coretcl 2-1174] Renamed 907 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/P V S Sukeerthi/Desktop/project_ff/project_ff.runs/image_processing_0_synth_1/image_processing_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file image_processing_0_utilization_synth.rpt -pb image_processing_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 05:04:22 2024...
